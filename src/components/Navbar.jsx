@@ -13,7 +13,7 @@ const Navbar = () => {
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo or Brand Name */}
         <Link to="/" className="text-white text-2xl font-bold">
-          MyApp
+          United  School
         </Link>
 
         {/* Hamburger Menu for Mobile */}
@@ -54,10 +54,10 @@ const Navbar = () => {
             </li>
             <li>
               <Link
-                to="/about"
+                to="/gallery"
                 className="text-white hover:bg-blue-700 px-3 py-2 rounded block"
               >
-                About
+                Gallery
               </Link>
             </li>
             <li>
@@ -78,12 +78,13 @@ const Navbar = () => {
             </li>
             <li>
               <Link
-                to="/gallery"
+                to="/about"
                 className="text-white hover:bg-blue-700 px-3 py-2 rounded block"
               >
-                Gallery
+                About
               </Link>
             </li>
+
           </ul>
         </div>
       </div>
