@@ -40,43 +40,7 @@ export default function About() {
         </div>
       </section>
 
-      {/* History Timeline */}
-      <section className="py-24 px-4">
-        <div className="max-w-7xl mx-auto">
-          <motion.h2
-            initial="hidden"
-            whileInView="visible"
-            variants={fadeInUp}
-            className="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800"
-          >
-            Our Journey
-          </motion.h2>
-
-          <div className="relative max-w-4xl mx-auto">
-            <div className="absolute left-1/2 w-1 bg-gray-200 h-full -translate-x-1/2" />
-            {history.map((item, index) => (
-              <motion.div
-                key={item.year}
-                initial="hidden"
-                whileInView="visible"
-                variants={fadeInUp}
-                className={`mb-12 flex ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'} items-center`}
-              >
-                <div className="w-1/2 px-8">
-                  <div className="bg-white p-6 rounded-xl shadow-lg">
-                    <h3 className="text-2xl font-bold text-indigo-600 mb-2">{item.year}</h3>
-                    <h4 className="text-xl font-semibold mb-2">{item.title}</h4>
-                    <p className="text-gray-600">{item.description}</p>
-                  </div>
-                </div>
-                <div className="w-1/2 flex justify-center">
-                  <div className="w-6 h-6 bg-indigo-600 rounded-full border-4 border-white" />
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
+      
 
       {/* Values Section */}
       <section className="py-24 px-4 bg-white">
